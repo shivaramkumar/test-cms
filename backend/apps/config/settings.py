@@ -31,8 +31,12 @@ SECRET_KEY = "django-insecure-cbqo$zwrcx9nt=&=_6o^2vt)8^$8@i(yq^^!)+6y%*5abx*r$$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["opulent-umbrella-wr5xvp7rv9j35g5q-8000.app.github.dev","localhost","127.0.0.1"]
 
+CORS_ALLOWED_ORIGINS = [
+    "https://localhost:8000",
+    "https://opulent-umbrella-wr5xvp7rv9j35g5q-8000.app.github.dev"
+]
 
 # Application definition
 
@@ -45,6 +49,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django.contrib.sites",
+    "corsheaders",
     # CMS base apps
     "cms",
     "menus",
@@ -84,6 +89,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'corsheaders.middleware.CorsMiddleware',
     "cms.middleware.user.CurrentUserMiddleware",
     "cms.middleware.page.CurrentPageMiddleware",
     "cms.middleware.toolbar.ToolbarMiddleware",
