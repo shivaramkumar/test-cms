@@ -31,11 +31,11 @@ SECRET_KEY = "django-insecure-cbqo$zwrcx9nt=&=_6o^2vt)8^$8@i(yq^^!)+6y%*5abx*r$$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["opulent-umbrella-wr5xvp7rv9j35g5q-8000.app.github.dev","localhost","127.0.0.1"]
+ALLOWED_HOSTS = ["https://sturdy-journey-5gr5vjqg4pvf79p6-8000.app.github.dev","localhost","127.0.0.1"]
 
 CORS_ALLOWED_ORIGINS = [
     "https://localhost:8000",
-    "https://opulent-umbrella-wr5xvp7rv9j35g5q-8000.app.github.dev"
+    "https://sturdy-journey-5gr5vjqg4pvf79p6-8000.app.github.dev"
 ]
 
 # Application definition
@@ -103,7 +103,7 @@ TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
         "DIRS": [
-            os.path.join(BASE_DIR, "apps/*", "templates"),
+            os.path.join(BASE_DIR, "/apps/*","templates"),
         ],
         "APP_DIRS": True,
         "OPTIONS": {

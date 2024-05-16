@@ -1,2 +1,7 @@
 {# Replace this with your base template #}
+{% load menu_tags %}
 {% extends "bootstrap5/base.html" %}
+
+<ul class="nav">
+    {% show_menu 0 100 100 100 %}
+</ul>

@@ -6,6 +6,18 @@ name = "pypi"
 [packages]
 django-cms = "*"
 django-cors-headers = "*"
+djangocms-text-ckeditor = "*"
+djangocms-link = "*"
+djangocms-file = "*"
+djangocms-picture = "*"
+djangocms-video = "*"
+djangocms-googlemap = "*"
+djangocms-snippet = "*"
+djangocms-style = "*"
+djangocms-alias = "*"
+djangocms-versioning = "*"
+djangocms-frontend = "*"
+django-extensions = "*"
 
 [dev-packages]
 
